@@ -17,6 +17,6 @@ return {
           show_hidden_count = true,
         },
       },
-    }    
+    }
   end,
 }
