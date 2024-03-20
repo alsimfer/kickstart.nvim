@@ -157,8 +157,9 @@ vim.opt.scrolloff = 10
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-vim.keymap.set('n', '<leader>b', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle Neotree' })
+vim.keymap.set('n', '<leader>n', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle Neotree' })
 vim.keymap.set('n', '<leader>g', '<Cmd>Neogit kind=auto<CR>', { desc = 'Neogit' })
+vim.keymap.set('n', '<leader>f', '<Cmd>Telescope live_grep search_dirs=.<CR>', { desc = 'Telescope: find in curdir' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
